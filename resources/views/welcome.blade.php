@@ -1,15 +1,24 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
-</head>
-<body>
-<!-- <h1 class="text-3xl font-bold ">
-    Hello world!
-</h1> -->
+@extends('base')
+@section('title','Acceuill')
+@section('hero')
+    <h1>herooo</h1>
+@endsection
+@section('content')
+    <!-- Decouvrir nos annonces-->
+    <div>
+
+        <p>annonces</p>
+    </div>
 
 
-</body>
-</html>
+    <!-- Decouvrir nos categories-->
+    <div>
+
+        <p>categories</p>
+    </div>
+
+    <!-- Decouvrir notre selection-->
+    <div>
+
+        <p>selection</p>
+    </div>
