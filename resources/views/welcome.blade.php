@@ -29,7 +29,7 @@
             </div>
             <div class="border-sm rounded-lg absolute z-2 inset-0 bg-black/50 opacity-50 transition-opacity duration-300 pb-40 pt-40"></div>
 
-            
+
         </div>
         <!--text_bienvenue-->
         <div class="absolute top-40 mr-4 ml-4 lg:float-left lg:ml-20">
@@ -40,7 +40,7 @@
                 <h3 class="text-slate-100 text-lg">Explorez notre plateforme exceptionnelle pour trouver, vendre et louer <br> des propriétés de manière simple et efficace</h3>
             </div>
         </div>
-    
+
     </div>
 @endsection
 @section('content')
@@ -63,7 +63,7 @@
                     <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" class="w-full" alt="...">
                 </div>
                 <div class="absolute bottom-8 left-5 text-2xl font-bold text-white">
-                    <p>40000FCFA/mois</p>
+                    <p>40000FCFA/an</p>
                 </div>
                 <div class="absolute bottom-8 top-0 right-0 text-2xl font-bold text-white">
                     <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">A Louer</span>
@@ -161,7 +161,7 @@
         <div class="flex flex-col">
            <div class="flex flex-col m-8">
                <p class="text-2xl font-extralight">Explorer Nos Villes</p>
-               <p class="w-60  text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+               <p class="w-60  text-sm">Loremd ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
            </div>
             <div class="m-8">
             <div
