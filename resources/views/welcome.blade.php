@@ -35,7 +35,7 @@
 
 
         <!-- Texte de bienvenue -->
-        <!-- <div class=" top-40 mr-4 ml-4 lg:float-left lg:ml-20">
+         <div class=" top-40 mr-4 ml-4 lg:float-left lg:ml-20">
             <div class="mb-5">
                 <h1 class="text-white font-bold text-4xl">Nous vous aidons à trouver <br>votre maison <span
                         class="text-[#16a34a]">de rêve!</span></h1>
@@ -44,7 +44,7 @@
                 <h3 class="text-slate-100 text-lg">Explorez notre plateforme exceptionnelle pour trouver, vendre et louer
                     <br> des propriétés de manière simple et efficace</h3>
             </div>
-        </div> -->
+        </div> 
 </div>
 
 @endsection
