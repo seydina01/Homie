@@ -3,45 +3,73 @@
 @section('hero')
     <!--hero-->
     <div class="h-full relative lg:w-12/12 lg:h-full lg:m-4">
-        <div id="default-carousel" class="relative group overflow-hidden w-full h-4/6 lg:h-full rounded-lg " data-carousel="slide">
+        
+
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-full z-0 overflow-hidden md:h-96  " style="height:100%">
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out h-full w-full " data-carousel-item>
-                    <img src="https://images.unsplash.com/photo-1612965607446-25e1332775ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlYWxzdGF0ZXN8ZW58MHx8MHx8fDA%3D" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:object-fill " alt="...">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://pbs.twimg.com/media/GFBLcG9WkAAECFu?format=jpg&name=small" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:object-fill" alt="...">
+                    <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:object-fill" alt="...">
+                    <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:object-fill" alt="...">
+                    <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 5 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:object-fill " alt="...">
+                    <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
             </div>
-            <div class="border-sm rounded-lg absolute z-2 inset-0 bg-black/50 opacity-50 transition-opacity duration-300 pb-40 pt-40"></div>
-
-            
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
-        <!--text_bienvenue-->
-        <div class="absolute top-40 mr-4 ml-4 lg:float-left lg:ml-20">
+
+
+        <!-- Texte de bienvenue -->
+        <div class=" top-40 mr-4 ml-4 lg:float-left lg:ml-20">
             <div class="mb-5">
-            <h1 class="text-white font-bold text-4xl ">Nous vous aidons à trouver <br>votre maison <span class="text-[#16a34a]">de rêve!</span></h1>
+                <h1 class="text-white font-bold text-4xl">Nous vous aidons à trouver <br>votre maison <span
+                        class="text-[#16a34a]">de rêve!</span></h1>
             </div>
             <div>
-                <h3 class="text-slate-100 text-lg">Explorez notre plateforme exceptionnelle pour trouver, vendre et louer <br> des propriétés de manière simple et efficace</h3>
+                <h3 class="text-slate-100 text-lg">Explorez notre plateforme exceptionnelle pour trouver, vendre et louer
+                    <br> des propriétés de manière simple et efficace</h3>
             </div>
         </div>
-    
-    </div>
+</div>
+
 @endsection
 @section('content')
 
