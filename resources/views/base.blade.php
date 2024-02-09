@@ -31,6 +31,14 @@
         @include('partiels/footer')
     </footer>
 
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script>                 
+        document.getElementById('burgerBtn').addEventListener('click', function() {
+        document.getElementById('burgerMenu').classList.toggle('hidden');
+        });
+        
+   </script>
+   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>

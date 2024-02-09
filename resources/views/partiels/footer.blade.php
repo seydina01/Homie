@@ -1,5 +1,5 @@
 <!--footer-->
-<div class="bg-white w-full h-full flex flex-col p-4 rounded-lg justify-center items-center text-gray-700 gap-4 ">
+<div class="bg-white w-full h-full flex flex-col p-4 rounded-lg justify-center items-center text-gray-700 gap-4 lg:mt-24">
 
     <div class="flex flex-col justify-between gap-8 lg:flex-row lg:gap-20 lg:m-0 lg:w-full   ">
         <!--map-->
@@ -30,7 +30,7 @@
         </div>
     </div>
     <!--reseaux-->
-    <div class="border-t-2 pt-2 w-full flex flex-col gap-8 pb-4 lg:flex-row lg:pt-8 lg:justify-between lg:gap-18 lg:m-4  ">
+    <div class="border-t-2 pt-2 w-full flex flex-col gap-8 pb-4 lg:flex-row lg:pt-8 lg:justify-between lg:gap-14  ">
         <div>&copy;2024 <span class="text-gray-700">Sama</span><span class="text-[#16a14a]">Keur.</span> <a href="#" class='border-b-2 border-[#16a14a] '>667Devs</a> All rights reserved</div>
         <div class="flex flex-row gap-4">
             <div class="cursor-pointer "><p><i class="fa-brands fa-instagram text-[#16a14a] fa-xl "></i></p></div>
