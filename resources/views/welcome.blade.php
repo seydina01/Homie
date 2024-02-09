@@ -3,16 +3,12 @@
 @section('hero')
     <!--hero-->
 
-    <div class="h-full relative lg:w-12/12 lg:h-full lg:m-4">
+    <!--hero-->
+    <div class="h-full relative m-1 mt-20 lg:w-12/12 lg:h-full lg:m-4  lg:mt-20">
 
-
-    <div class="h-full relative m-1 lg:w-12/12 lg:h-full lg:m-4 ">
-
-
-
-        <div id="default-carousel" class="relative group overflow-hidden  w-full " data-carousel="slide">
+        <div id="default-carousel" class="relative group overflow-hidden  w-full  " data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative z-0 h-56 overflow-hidden pt-60 pb-52 rounded-lg md:h-96">
+            <div class="relative z-0 h-56 overflow-hidden pt-60 pb-52 rounded-lg md:h-96 lg:pt-96 lg:pb-96">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out " data-carousel-item>
                     <img src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full" alt="...">
@@ -34,81 +30,50 @@
                     <img src="https://media.istockphoto.com/id/1456467041/photo/beautiful-kitchen-in-new-farmhouse-style-luxury-home-with-island-pendant-lights-and-hardwood.jpg?s=612x612&w=0&k=20&c=wwlKjbAsf_xBveRuqMV2fCJ8cpED0CoXE4GdIUSxpW8=" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
             </div>
-
-
             <div class="border-sm rounded-lg absolute z-2 inset-0 bg-black/50 opacity-50 transition-opacity duration-300 pb-40 pt-40"></div>
-
-
-
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-            </div>
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-
-
-            <div class="border-sm rounded-lg absolute z-2 inset-0 bg-black/50 opacity-50 transition-opacity duration-300 pb-40 pt-40"></div>
-
 
         </div>
 
 
         <!-- Texte de bienvenue -->
-        <!-- <div class=" top-40 mr-4 ml-4 lg:float-left lg:ml-20">
-            <div class="mb-5">
-                <h1 class="text-white font-bold text-4xl">Nous vous aidons à trouver <br>votre maison <span
-                        class="text-[#16a34a]">de rêve!</span></h1>
+        <div class="absolute top-14 mr-4 ml-4 h-10 lg:top-60 lg:ml-20 lg:float-start " >
+            <div class="">
+                <div class="mb-2 ">
+                    <h1 class="text-white font-bold text-3xl lg:text-4xl ">Nous vous aidons à trouver votre maison de  <span
+                            class="text-[#16a34a]">vos rêve!</span></h1>
+                </div>
+                <div class="lg:mt-8">
+                    <h3 class="text-slate-100 text-md lg:text-xl">Explorez notre plateforme exceptionnelle pour acheter, vendre et louer
+                        <br> des propriétés de manière simple et efficace.</h3>
+                </div>
             </div>
-            <div>
-                <h3 class="text-slate-100 text-lg">Explorez notre plateforme exceptionnelle pour trouver, vendre et louer
-                    <br> des propriétés de manière simple et efficace</h3>
+            <!--searchBar-->
+            <div class="relative flex mt-14  justify-center items-center lg:mt-6 lg:ml-0 lg:w-full lg:block " >
+                <div class="">
+                    <input type="search" placeholder="Appartement,ville" class="w-80 h-10 pl-4 pr-2 bg-slate-50 text-zinc-700 rounded-lg border-none outline-none focus:border-none lg:w-96 lg:h-14 lg:pr-8" >
+                </div>
+                <div class="flex justify-center absolute right-0 bottom-0 top-0 w-16 bg-[#16a34a] rounded-e-lg lg:items-center lg:left-80 ">
+                    <p class="pt-2  text-slate-50  cursor-pointer lg:pt-0.5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </p>
+                </div>
             </div>
-<<<<<<< HEAD
         </div>
-
-
     </div>
 
-=======
-        </div> -->
-
-</div>
 
 
 @endsection
 @section('content')
 
-
-        <p class="text-slate-950 ">annonces</p>
-
-
-    <!-- Decouvrir nos biens-->
+    <!-- DebBien-->
     <div class="flex-col">
         <div class="flex flex-col justify-center">
-            <h1 class="flex justify-center text-2xl font-bold">Discover Our Featured Listings</h1>
-            <h5 class="flex justify-center text-sm mt-2" >Lorem ipsum dolor sit amet,</h5>
+            <h1 class="flex justify-center text-2xl font-bold font-serif">Discover Our Featured Listings</h1>
+            <h5 class="flex justify-center text-sm mt-2 text-slate-700 dark:text-slate-500" >Lorem ipsum dolor sit amet,</h5>
         </div>
-
     <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-3 justify-center mt-10  ">
         <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mb-3 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
             <div class="relative">
@@ -123,7 +88,7 @@
                 </div>
             </div>
             <div class="flex-auto p-6">
-                <h5 class="mb-0 text-base font-bold ">Design apartment tesr</h5>
+                <h5 class="mb-0 text-base font-bold "><a href="#" class="">Design apartment</a> </h5>
                 <p class="mb-0 text-base font-medium">Dakar,camberene</p>
                 <div class="flex flex-row gap-4 mt-2">
                     <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
@@ -196,47 +161,480 @@
             </div>
         </div>
     </div>
-
+        <div class="text-center">
+            <button type="button" class="py-2.5 px-5 me-2 mb-2  text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href="#">Voir Plus</a> </button>
+        </div>
 
     </div>
-
+    <!--FinBien-->
     <!-- Decouvrir nos categories-->
-    <div>
-        <p>categories</p>
-    </div>
+    <div class="mt-12 flex flex-col lg:grid lg:grid-cols-3 lg:m-40 lg:mt-12 lg:grid-flow-row ">
+        <!--deb -->
+        <div>
+            <p class="text-white">.</p>
+        <div class="flex flex-col ml-8 mt-28 ">
+            <p class="text-2xl font-serif ">Residentiel</p>
+            <p class="text-slate-700 dark:text-slate-500"> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incidi dunt</small></p>
+        </div>
+        <div class="w-36 mt-12 lg:m-0 ">
+        <div class="grid grid-cols-1 divide-y divide-x-0 divide-slate-950 mt-4 ml-8">
+            <p></p>
+            <p></p>
+        </div>
+        </div>
+        </div>
+        <!--fin -->
+            <!--debcard -->
+            <a href="#" class="lg:row-span-2 ">
+                <div>
+                    <div class="flex flex-col">
 
-    <!-- Decouvrir notre selection-->
-    <div>
-        <p>selection</p>
-    </div>
-    <!-- Decouvrir nos villles-->
-    <div>
-        <div class="flex flex-col">
-           <div class="flex flex-col m-8">
-               <p class="text-2xl font-extralight">Explorer Nos Villes</p>
-               <p class="w-60  text-sm">Loremd ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-           </div>
-            <div class="m-8">
-            <div
-                class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 ">
-                <div
-                    class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
-                    <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+                        <div class="m-8 ">
+                            <div
+                                class="relative grid h-[20rem] lg:h-[44rem]  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                <div
+                                    class="absolute inset-0 m-0 h-full w-full  overflow-hidden rounded-none bg-transparent  bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')]  bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                    <div class="absolute inset-0 w-full h-full bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                </div>
+                                <div class="flex flex-col absolute top-0 text-white mt-6">
+                                    <p class="">26 proprietes</p>
+                                    <p class="ml-1 text-2xl">Apartment</p>
+                                </div>
+                                <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                    <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="relative p-6 px-6 py-14 text-center">
-                   <p>dakar</p>
+            </a>
+            <!--debcard -->
+            <a href="#">
+            <div>
+                <div class="flex flex-col">
 
+                    <div class="m-8">
+                        <div
+                            class="relative grid h-[20rem]  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                            <div
+                                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+                            </div>
+                            <div class="flex flex-col absolute top-0 text-white mt-6">
+                                <p class="">23 proprietes</p>
+                                <p class="ml-1 text-2xl">Studio</p>
+                            </div>
+                            <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!--   fincard -->
+            <!--debcard -->
+            <a href="#">
+                <div>
+                    <div class="flex flex-col">
+
+                        <div class="m-8">
+                            <div
+                                class="relative grid h-[20rem]  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                <div
+                                    class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                    <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+                                </div>
+                                <div class="flex flex-col absolute top-0 text-white mt-6">
+                                    <p class="">23 proprietes</p>
+                                    <p class="ml-1 text-2xl">Single Family Home</p>
+                                </div>
+                                <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                    <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!--debcard -->
+            <a href="#">
+                <div>
+                    <div class="flex flex-col">
+
+                        <div class="m-8">
+                            <div
+                                class="relative grid h-[20rem]  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                <div
+                                    class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                    <div class="absolute inset-0 w-full h-full bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                </div>
+                                <div class="flex flex-col absolute top-0 text-white mt-6">
+                                    <p class="">23 proprietes</p>
+                                    <p class="ml-1 text-2xl">Villa</p>
+                                </div>
+                                <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                    <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!--deb -->
+        <div>
+            <div class="mr-24 text-start">
+                <p class="text-white">.</p>
+                <div class="flex flex-col ml-8 lg:mt-28">
+                    <p class="text-2xl mr-24 font-serif">Commercial</p>
+                    <p class="text-start text-slate-700 dark:text-slate-500"> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</small></p>
+                </div>
+            </div>
+
+            <div class="w-36 mt-12">
+                <div class="grid grid-cols-1 divide-y divide-x-0 divide-slate-950 mt-4 ml-8">
+                    <p></p>
+                    <p></p>
                 </div>
             </div>
         </div>
+            <!--fin -->
+            <!--debcard -->
+            <a href="#" class="">
+                <div>
+                    <div class="flex flex-col">
+
+                        <div class="m-8">
+                            <div
+                                class="relative grid h-[20rem]  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                <div
+                                    class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                    <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+                                </div>
+                                <div class="flex flex-col absolute top-0 text-white mt-6">
+                                    <p class="">23 proprietes</p>
+                                    <p class="ml-1 text-2xl">Apartment</p>
+                                </div>
+                                <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                    <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!--debcard -->
+            <a href="#">
+                <div>
+                    <div class="flex flex-col">
+
+                        <div class="m-8">
+                            <div
+                                class="relative grid h-[20rem]  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                <div
+                                    class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                    <div class="absolute inset-0 w-full h-full bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                </div>
+                                <div class="flex flex-col absolute top-0 text-white mt-6">
+                                    <p class="">23 proprietes</p>
+                                    <p class="ml-1 text-2xl">Apartment</p>
+                                </div>
+                                <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                    <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+    </div>
+    <!-- Decouvrir notre selection-->
+    <div class="mt-24 lg:mt-12">
+        <!-- DebBien-->
+
+        <div class="flex-col m-8 lg:mt-8">
+            <div class="flex flex-col justify-center">
+                <h1 class="flex justify-center text-2xl font-bold font-serif">Discover Our Featured Listings</h1>
+                <h5 class="flex justify-center text-sm mt-2 text-slate-700 dark:text-slate-500" >Lorem ipsum dolor sit amet,</h5>
+            </div>
+         <div class="flex flex-col lg:grid lg:grid-cols-3 gap-3 lg:grid-rows-2  lg:m-28 lg:mt-8">
+            <a href="#" class="cursor-pointer lg:w-8">
+                <article class="relative isolate flex flex-col justify-end overflow-hidden   px-8 pb-8 pt-40 max-w-sm mx-auto lg:w-[40rem]   ">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-700 via-gray-900/40"></div>
+                    <span class="absolute top-1 right-0 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A louer</span>
+                    <h3 class="z-10  text-2xl font-bold text-white">Maison en MER</h3>
+                    <h3 class="z-10  text-white">24000FCFA/mois</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                        <div class="flex flex-row gap-4 mt-2 text-white ">
+                            <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
+                            <p> <i class="fa fa-bath" aria-hidden="true"></i>3</p>
+                            <p> <i class="fa fa-car" aria-hidden="true"></i>1</p>
+                            <p>m2 <i class="fa fa-industry" aria-hidden="true"></i>25</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#" class="cursor-pointer lg:w-8">
+                    <article class="relative isolate flex flex-col justify-end overflow-hidden   px-8 pb-8 pt-40 max-w-sm mx-auto lg:w-[40rem]   ">
+                        <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover ">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-700 via-gray-900/40"></div>
+                        <span class="absolute top-1 right-0 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A louer</span>
+                        <h3 class="z-10  text-2xl font-bold text-white">Maison en MER</h3>
+                        <h3 class="z-10  text-white">24000FCFA/mois</h3>
+                        <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                            <div class="flex flex-row gap-4 mt-2 text-white ">
+                                <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
+                                <p> <i class="fa fa-bath" aria-hidden="true"></i>3</p>
+                                <p> <i class="fa fa-car" aria-hidden="true"></i>1</p>
+                                <p>m2 <i class="fa fa-industry" aria-hidden="true"></i>25</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            <a href="#" class="cursor-pointer lg:w-8">
+                <article class="relative isolate flex flex-col justify-end overflow-hidden   px-8 pb-8 pt-40 max-w-sm mx-auto lg:w-[40rem]   ">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-700 via-gray-900/40"></div>
+                    <span class="absolute top-1 right-0 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A louer</span>
+                    <h3 class="z-10  text-2xl font-bold text-white">Maison en MER</h3>
+                    <h3 class="z-10  text-white">24000FCFA/mois</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                        <div class="flex flex-row gap-4 mt-2 text-white ">
+                            <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
+                            <p> <i class="fa fa-bath" aria-hidden="true"></i>3</p>
+                            <p> <i class="fa fa-car" aria-hidden="true"></i>1</p>
+                            <p>m2 <i class="fa fa-industry" aria-hidden="true"></i>25</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#" class="cursor-pointer lg:w-8">
+                <article class="relative isolate flex flex-col justify-end overflow-hidden   px-8 pb-8 pt-40 max-w-sm mx-auto lg:w-[40rem]   ">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-700 via-gray-900/40"></div>
+                    <span class="absolute top-1 right-0 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A louer</span>
+                    <h3 class="z-10  text-2xl font-bold text-white">Maison en MER</h3>
+                    <h3 class="z-10  text-white">24000FCFA/mois</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                        <div class="flex flex-row gap-4 mt-2 text-white ">
+                            <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
+                            <p> <i class="fa fa-bath" aria-hidden="true"></i>3</p>
+                            <p> <i class="fa fa-car" aria-hidden="true"></i>1</p>
+                            <p>m2 <i class="fa fa-industry" aria-hidden="true"></i>25</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#" class="cursor-pointer lg:w-8">
+                <article class="relative isolate flex flex-col justify-end overflow-hidden   px-8 pb-8 pt-40 max-w-sm mx-auto lg:w-[40rem]   ">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <span class="absolute top-1 right-0 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A louer</span>
+                    <h3 class="z-10  text-2xl font-bold text-white">Maison en MER</h3>
+                    <h3 class="z-10  text-white">24000FCFA/mois</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                        <div class="flex flex-row gap-4 mt-2 text-white ">
+                            <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
+                            <p> <i class="fa fa-bath" aria-hidden="true"></i>3</p>
+                            <p> <i class="fa fa-car" aria-hidden="true"></i>1</p>
+                            <p>m2 <i class="fa fa-industry" aria-hidden="true"></i>25</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#" class="cursor-pointer lg:w-8">
+                <article class="relative isolate flex flex-col justify-end overflow-hidden   px-8 pb-8 pt-40 max-w-sm mx-auto lg:w-[40rem]   ">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D" alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <span class="absolute top-1 right-0 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A louer</span>
+                    <h3 class="z-10  text-2xl font-bold text-white">Maison en MER</h3>
+                    <h3 class="z-10  text-white">24000FCFA/mois</h3>
+                    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                        <div class="flex flex-row gap-4 mt-2 text-white ">
+                            <p> <i class="fa fa-bed" aria-hidden="true"></i>5</p>
+                            <p> <i class="fa fa-bath" aria-hidden="true"></i>3</p>
+                            <p> <i class="fa fa-car" aria-hidden="true"></i>1</p>
+                            <p>m2 <i class="fa fa-industry" aria-hidden="true"></i>25</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+         </div>
         </div>
+
+        </div>
+        <!--FinBien-->
+    <div class="lg:w-[90rem] bg-gray-200 lg:m-12 ">
+        <div class="lg:m-8 lg:w-4 ">
+            <div class="mt-12 flex flex-col lg:flex lg:flex-row  ">
+                <!--deb -->
+                <div>
+                    <p class="text-white">.</p>
+                    <div class="flex flex-col ml-8 mt-28 lg:w-40 ">
+                        <p class="text-2xl font-serif ">Explore our cities</p>
+                        <p class="text-slate-700 dark:text-slate-500"> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incidi dunt</small></p>
+                    </div>
+                    <div class="w-36 mt-12 lg:m-0 ">
+                        <div class="grid grid-cols-1 divide-y divide-x-0 divide-slate-950 mt-4 ml-8">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <!--fin -->
+                <!--debcard -->
+                <div>
+                    <a href="#" class="w-4">
+                        <div>
+                            <div class="flex flex-col">
+
+                                <div class="m-8 ">
+                                    <div
+                                        class="relative grid h-[30rem] lg:w-56  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                        <div
+                                            class="absolute inset-0 m-0 h-full w-full  overflow-hidden rounded-none bg-transparent  bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')]  bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                            <div class="absolute inset-0 w-full h-full bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                        </div>
+                                        <div class="flex flex-col absolute top-0 text-white mt-6">
+                                            <p class="">26 proprietes</p>
+                                            <p class="ml-1 text-2xl">Apartment</p>
+                                        </div>
+                                        <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                            <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="w-4">
+                        <div>
+                            <div class="flex flex-col">
+
+                                <div class="m-8 ">
+                                    <div
+                                        class="relative grid h-[30rem] lg:w-56  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                        <div
+                                            class="absolute inset-0 m-0 h-full w-full  overflow-hidden rounded-none bg-transparent  bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')]  bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                            <div class="absolute inset-0 w-full h-full bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                        </div>
+                                        <div class="flex flex-col absolute top-0 text-white mt-6">
+                                            <p class="">26 proprietes</p>
+                                            <p class="ml-1 text-2xl">Apartment</p>
+                                        </div>
+                                        <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                            <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="w-4">
+                        <div>
+                            <div class="flex flex-col">
+
+                                <div class="m-8 ">
+                                    <div
+                                        class="relative grid h-[30rem] lg:w-56  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                        <div
+                                            class="absolute inset-0 m-0 h-full w-full  overflow-hidden rounded-none bg-transparent  bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')]  bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                            <div class="absolute inset-0 w-full h-full bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                        </div>
+                                        <div class="flex flex-col absolute top-0 text-white mt-6">
+                                            <p class="">26 proprietes</p>
+                                            <p class="ml-1 text-2xl">Apartment</p>
+                                        </div>
+                                        <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                            <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="w-4">
+                        <div>
+                            <div class="flex flex-col">
+
+                                <div class="m-8 ">
+                                    <div
+                                        class="relative grid h-[30rem] lg:w-56  max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-white bg-clip-border text-center text-gray-700  ">
+                                        <div
+                                            class="absolute inset-0 m-0 h-full w-full  overflow-hidden rounded-none bg-transparent  bg-[url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWV8ZW58MHx8MHx8fDA%3D')]  bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                                            <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-black/50 opacity-50 hover:opacity-0 transition-opacity duration-300"></div>
+                                        </div>
+                                        <div class="flex flex-col absolute top-0 text-white mt-6">
+                                            <p class="">26 proprietes</p>
+                                            <p class="ml-1 text-2xl">Apartment</p>
+                                        </div>
+                                        <div class="flex  absolute bottom-10 ml-8 text-white mt-6">
+                                            <p class="">Plus de detail <i class="fa-solid fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Decouvrir nos villles-->
+    <div>
+
+
+     </div>
     </div>
 
 
     <!-- contact-->
     <div>
-        <p>contact</p>
+        <!-- contact-->
+        <div class="w-full flex justify-center lg:w-full lg:h-full lg:flex lg:justify-center lg:items-center">
+            <div class="w-full m-2 h-screen bg-white rounded-lg flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between lg:w-full lg:m-10 lg:h-full lg:gap-10  " style="width:98%; height:35%">
+                <div class="rounded-lg lg:w-full ">
+                    <img src="{{asset('contact.png')}}" class="h-96 w-full lg:w-full lg:h-full " alt="" style="width:80%;height:30% ">
+                </div>
+                <div class="bg-white sm:border-0 lg:border-2 p-4 border-gray-50 rounded-lg w-80  flex justify-center items-center pl-4 pt-4 pb-8 lg:w-full lg:h-96 lg:block lg:-mt-4 lg:p-20 lg:mr-20 " style="width:40%">
+                    <form action="" method="">
+                        <input type="text" name="nom" id="nom" placeholder="nom:" class="w-80 rounded-lg outline-none border-green-600 focus:border-green-600 focus:outline-none mb-4">
+                        <input type="text" name="prenom" id="prenom" placeholder="prenom:" class="w-80 rounded-lg border-green-600 focus:border-green-600 focus:outline-none mb-4">
+                        <input type="email" name="email" id="email" placeholder="Email:" class="w-80 rounded-lg border-green-600 focus:border-green-600 focus:outline-none mb-4">
+                        <input type="text" name="objet" id="objet" placeholder="Objet:" class="w-80 rounded-lg border-green-600 focus:border-green-600 focus:outline-none mb-4">
+                        <textarea name="message" id="message" cols="30" rows="3" placeholder="message:" class="border-green-600 rounded-lg mb-4 focus:border-[#16a34a]"></textarea>
+                        <button class="bg-[#16a34a] w-40 h-10 text-slate-50 rounded-lg lg:mt-4">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 
