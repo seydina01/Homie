@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+Route::get('/vendre', function () {
+    return view('properties/vendre');
+})->name('vendre');
 Route::get('/show', function () {
     return view('properties/show');
 });

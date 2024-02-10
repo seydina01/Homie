@@ -1,5 +1,5 @@
 <!--footer-->
-<div class="bg-white w-full h-full flex flex-col p-4 rounded-lg justify-center items-center text-gray-700 gap-4 lg:mt-24">
+<div id="contact" class="bg-slate-200 w-full h-full flex flex-col p-4 rounded-lg justify-center items-center text-gray-700 gap-4 lg:mt-24">
 
     <div class="flex flex-col justify-between gap-8 lg:flex-row lg:gap-20 lg:m-0 lg:w-full   ">
         <!--map-->
@@ -20,7 +20,7 @@
             </div>
             <div>
                 <p><i class="fa-solid fa-envelope text-[#16a14a]"></i>
-                    email
+                    samaKeur@gmail.com
                 </p>
 
             </div>
