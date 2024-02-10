@@ -2,8 +2,6 @@
 @section('title','Acceuille')
 @section('hero')
     <!--hero-->
-
-    <!--hero-->
     <div class="h-full relative m-1 mt-20 lg:w-12/12 lg:h-full lg:m-4  lg:mt-20">
 
         <div id="default-carousel" class="relative group overflow-hidden  w-full  " data-carousel="slide">
@@ -62,6 +60,7 @@
             </div>
         </div>
     </div>
+    <!--endHero-->
 
 
 
