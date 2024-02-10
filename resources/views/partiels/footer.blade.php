@@ -30,7 +30,7 @@
         </div>
     </div>
     <!--reseaux-->
-    <div class="border-t-2 pt-2 w-full flex flex-col gap-8 pb-4 lg:flex-row lg:pt-8 lg:justify-between lg:gap-14  ">
+    <div class="border-t-2 border-gray-100 pt-2 w-full flex flex-col gap-8 pb-4 lg:flex-row lg:pt-8 lg:justify-between lg:gap-14  ">
         <div>&copy;2024 <span class="text-gray-700">Sama</span><span class="text-[#16a14a]">Keur.</span> <a href="#" class='border-b-2 border-[#16a14a] '>667Devs</a> All rights reserved</div>
         <div class="flex flex-row gap-4">
             <div class="cursor-pointer "><p><i class="fa-brands fa-instagram text-[#16a14a] fa-xl "></i></p></div>
