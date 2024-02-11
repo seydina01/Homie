@@ -1,8 +1,9 @@
 @extends('base')
 @section('title','register')
 @section('content')
-<div>
-    <div class="mt-40 max-w-[400px] m-auto w-full p-6 bg-white shadow-md rounded-md text-gray-700">
+<div class="mt-20 mb-0 py-20 w-full h-full relative bg-[url('https://media.istockphoto.com/id/848549286/photo/dream-home-luxury-house-success.jpg?s=612x612&w=0&k=20&c=cjhoNqomNTxgYWxuZ9Ev5PxZh6WY96vvDGf3Hl-7x-U=')] bg-no-repeat bg-cover bg-center ">
+   <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative max-w-[400px] m-auto w-full p-6 bg-white shadow-md rounded-md text-gray-700">
         <h5 class="text-center mb-4 text-xl font-semibold py-4">Signup</h5>
         <form action="" class="text-start">
             <div class="grid grid-cols-1">
@@ -31,7 +32,7 @@
                 </div>
                 <div class="text-center mt-2">
                     <span class="text-slate-400 me-2">Vous avez déjas un compte ?</span>
-                    <a href="#" class="text-gray-900 hover:text-slate-600 font-semibold ">Se Connecter</a>
+                    <a href="{{route('logintest')}}" class="text-gray-900 hover:text-slate-600 font-semibold ">Se Connecter</a>
 
                 </div>
             </div>

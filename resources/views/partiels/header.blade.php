@@ -8,9 +8,12 @@
                         <div class="flex flex-row lg:relative  ">
                             <div class ="flex flex-row ">
                                 <!--account-->
-                                <div class="pt-1 hover:cursor-pointer lg:absolute lg:right-4 lg:pt-2  ">
-                                    <button class=""><i class="fa-sharp fa-solid fa-circle-user text-[#16a34a] fa-2x  cursor-pointer"></i></button>
+                                <div class="pt-1 hover:cursor-pointer lg:absolute lg:right-4 lg:pt-2">
+                                     <a href="{{route('logintest')}}">
+                                        <i class="fa-sharp fa-solid fa-circle-user text-[#16a34a] fa-2x  cursor-pointer"></i>
+                                      </a>
                                 </div>
+
                                 <!--burgerMenu--> 
                                 <div class="lg:hidden" x-data="{ open: false }">
                                     <button id="burgerBtn" class="text-slate-900 w-10 h-10 relative focus:outline-none " @click="open = !open">
@@ -40,3 +43,4 @@
                 </div>
             </nav>
 </div>
+
