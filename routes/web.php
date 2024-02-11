@@ -29,6 +29,9 @@ Route::get('/index', function () {
 Route::get('/logintest', function () {
     return view('properties/login');
 })->name('logintest');
+Route::get('/registertest', function () {
+    return view('properties/register');
+})->name('registertest');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
