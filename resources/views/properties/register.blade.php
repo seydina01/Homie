@@ -11,12 +11,12 @@
                 <div class="mb-4">
                     <label for="firstname">Prenom:</label><br>
                     <input type="text" id="firstname" name="fisrtname" placeholder="Prenom" class="mt-3 w-full border-gray-200 rounded-lg focus:ring-0" required autofocus  style="border: 1px solid #ced4da; transition: border-color 0.2s ease-in-out;"onfocus="this.style.borderColor='#16a14a';this.style.outline='none'"onblur="this.style.borderColor='#ced4da';" >
-                    <x-input-error :messages="$errors->get('name')" class="mt-2" />
+                    <x-input-error :messages="$errors->get('firstname')" class="mt-2" />
                 </div>
                 <div class="mb-4">
                     <label for="lastname">Nom:</label><br>
                     <input type="text" id="lastname" name="lastname" placeholder="Nom" class="mt-3 w-full border-gray-200 rounded-lg focus:ring-0 " required style="border: 1px solid #ced4da; transition: border-color 0.2s ease-in-out;"onfocus="this.style.borderColor='#16a14a';this.style.outline='none'"onblur="this.style.borderColor='#ced4da';" >
-                    <x-input-error :messages="$errors->get('name')" class="mt-2" />
+                    <x-input-error :messages="$errors->get('lastname')" class="mt-2" />
                 </div>
                 <div class="mb-4">
                     <label for="email">Email:</label><br>

@@ -48,10 +48,10 @@
             <!--searchBar-->
             <div class="relative flex mt-14  justify-center items-center lg:mt-6 lg:ml-0 lg:w-full lg:block " >
                 <div class="">
-                    <input type="search" placeholder="Appartement,ville" class="w-80 h-10 pl-4 pr-2 bg-slate-50 text-zinc-700 rounded-lg border-none outline-none focus:border-none lg:w-96 lg:h-14 lg:pr-8" >
+                    <input type="search" placeholder="Appartement,ville" class="w-80 h-10 pl-4 pr-2 bg-slate-50 text-zinc-800 text-lg rounded-lg border-none outline-none focus:border-none focus:ring-0  lg:w-96 lg:h-14 lg:pr-8 " >
                 </div>
                 <div class="flex justify-center absolute right-0 bottom-0 top-0 w-16 bg-[#16a34a] rounded-e-lg lg:items-center lg:left-80 ">
-                    <p class="pt-2  text-slate-50  cursor-pointer lg:pt-0.5 ">
+                    <p class="pt-2  text-slate-50  cursor-pointer lg:pt-0 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
