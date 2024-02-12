@@ -6,25 +6,30 @@
    <div class="absolute inset-0 bg-black opacity-60"></div>
    <div  class="relative  max-w-[400px] w-full m-auto p-6 bg-white shadow-md rounded-lg text-gray-700">
         <h5 class="text-center  my-6 text-xl font-semibold">connexion</h5>
-        <form class="text-start" action="">
+        <form class="text-start" method="POST" action="{{ route('login') }}">
+            @csrf
             <div class="grid grid-cols-1">
                 <div class="grid grid-cols-1">
                     <div class="mb-4">
                         <label for="email"class="font-medium" >Email:</label> <br>
-                        <input type="email" id="email" name="email" placeholder="nom@exemple.com" class="form-input mt-3 w-full border-gray-200 rounded-lg focus:ring-0 " style="border: 1px solid #ced4da; transition: border-color 0.2s ease-in-out;"onfocus="this.style.borderColor='#16a14a';this.style.outline='none'"onblur="this.style.borderColor='#ced4da';">
+                        <input type="email" id="email" name="email" placeholder="nom@exemple.com" class="form-input mt-3 w-full border-gray-200 rounded-lg focus:ring-0 " :value="old('email')"  style="border: 1px solid #ced4da; transition: border-color 0.2s ease-in-out;"onfocus="this.style.borderColor='#16a14a';this.style.outline='none'"onblur="this.style.borderColor='#ced4da';" required autofocus autocomplete="username" >
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
                     <div class="mb-4">
                         <label for="password" class="font-medium">mot de passe:</label><br>
-                        <input type="password" id="password" placeholder='Password:' class="form-input mt-3 w-full border-gray-200 rounded-lg focus:ring-0" style="border: 1px solid #ced4da; transition: border-color 0.2s ease-in-out;"onfocus="this.style.borderColor='#16a14a';this.style.outline='none'"onblur="this.style.borderColor='#ced4da';">
+                        <input type="password" id="password" placeholder='Password:' class="form-input mt-3 w-full border-gray-200 rounded-lg focus:ring-0" style="border: 1px solid #ced4da; transition: border-color 0.2s ease-in-out;"onfocus="this.style.borderColor='#16a14a';this.style.outline='none'"onblur="this.style.borderColor='#ced4da';" required >
+                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
                     <div class="flex justify-between mb-4">
                         <div class="flex items-center mb-0">
-                            <input type="checkbox" id='RememberMe' class="form-checkbox rounded border-gray-200 focus:ring-green-200 focus:ring-opacity-50 ">
-                            <label for="RememberMe" class="form-checkbox-label text-slate-400 ml-1">Remember me</label>
+                            <input type="checkbox" id='remember_me' name="remember" class="form-checkbox rounded border-gray-200 focus:ring-green-200 focus:ring-opacity-50 ">
+                            <label for="remember_me" class=" text-slate-400 ml-1">{{ __('Remember me') }}</label>
                     
                         </div>
                         <p class="text-slate-400 mb-0">
-                            <a href="#" class="text-slate-600">mot de passe oublié ?</a>
+                            @if (Route::has('password.request'))
+                               <a href="{{ route('password.request')}}" class="text-slate-600">{{ __('mot de passe oublié ?') }}</a>
+                            @endif   
                         </p>
 
                     </div>
