@@ -1,5 +1,5 @@
 @extends('base')
-@section('title','Liste')
+@section('title','Tous')
 @section('hero')
     .
 @endsection
@@ -22,7 +22,7 @@
                                 </div>
                             @else
                                 <div class="absolute bottom-8 left-5 text-2xl font-bold text-white">
-                                    <p>{{$p->price}} Millions FCFA</p>
+                                    <p>{{$p->price}}Millions FCFA</p>
                                 </div>
                             @endif
 
@@ -37,7 +37,9 @@
                                 <p> <i class="fa fa-car" aria-hidden="true"></i>{{$p->garage}}</p>
                                 <p> <i class="fa fa-industry" aria-hidden="true"></i>{{$p->surface}}25m2</p>
                             </div>
-                            <h5 class="mb-0 text-base font-medium">Studio</h5>
+                            <h5 class="mb-0 text-base font-medium text-white ">rcebbj </h5>
+                            <h5 class="mb-0 text-base font-medium text-white ">rcebbj </h5>
+
                             <div class="divide-y divide-gray-400  mt-3">
                                 <p></p>
                                 <p class="mb-0 flex flex-row justify-between"><small class="text-gray-700"><i class="fa-regular fa-user"></i>Homiz</small> <small class="text-gray-700"><i class="fa-regular fa-calendar-days"></i> depuis {{$p->yearOfBuild}}</small></p>

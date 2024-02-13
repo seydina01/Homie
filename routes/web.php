@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\homecontroller;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PropertyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,19 +17,30 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+*/
+Route::resource('/', homeController::class)->names('welcome');
+Route::resource('properties', propertyController::class)->names('properties');
+Route::get('/rent', [homecontroller::class, 'rent'])->name('rent');
+Route::get('/all', [homecontroller::class, 'all'])->name('all');
+Route::resource('cities', cityController::class)->names('cities');
+Route::resource('categories', categoryController::class)->names('categories');
+
+
+
 Route::get('/vendre', function () {
     return view('properties/vendre');
 })->name('vendre');
 Route::get('/show', function () {
     return view('properties/show');
 });
-Route::get('/index', function () {
-    return view('properties/index');
-});
+//Route::get('/property', [propertyController::class, 'index']);
+
+
+
 Route::get('/logintest', function () {
     return view('properties/login');
 })->name('logintest');

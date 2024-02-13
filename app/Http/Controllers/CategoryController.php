@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\City;
+use App\Models\Property;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -34,9 +36,14 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Category $category)
+
+    public function show( $id)
     {
-        //
+        $pr=Category::findOrFail($id);
+        $properties = Property::where('category_id', $id)->get();
+        $cat=Category::all();
+        $vi=City::all();
+        return view('categories/show',compact('pr','properties','vi','cat'));
     }
 
     /**

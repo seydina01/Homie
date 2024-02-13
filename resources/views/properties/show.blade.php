@@ -12,18 +12,32 @@
             <div class="flex flex-col justify-between lg:flex-row lg:ml-16 lg:mt-4 ">
                 <div>
                     <div>
-                        <h3 class="sm:text-sm lg:text-3xl   font-mono">New Apartment Nice View</h3>
+                        <h3 class="sm:text-sm lg:text-3xl   font-mono">{{$pr->category->name}}</h3>
                     </div>
-                    <div class="flex flex-row lg:mt-2">
-                        <span class="bg-green-600 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A vendre</span>
-                    </div>
+                    @if($pr->status==1)
+                        <div class="flex flex-row lg:mt-2">
+                            <span class="bg-green-600 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A Louer</span>
+                        </div>
+                    @else
+                        <div class="flex flex-row lg:mt-2">
+                            <span class="bg-green-600 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">A vendre</span>
+                        </div>
+                    @endif
+
                     <div>
-                        <h3 class="sm:text-sm text-2xl">New york</h3>
+                        <h3 class="sm:text-sm text-2xl">{{$pr->adresse}}</h3>
                     </div>
                 </div>
-                <div class="m-4 ">
-                    <div><p class="sm:text-sm lg:text-5xl ">$11,000/mo</p></div>
-                </div>
+                @if($pr->status==1)
+                    <div class="m-4 ">
+                        <div><p class="sm:text-sm lg:text-5xl ">{{$pr->price}}FCFA/Mois</p></div>
+                    </div>
+                @else
+                    <div class="m-4 ">
+                        <div><p class="sm:text-sm lg:text-5xl ">{{$pr->price}}Millions FCFA</p></div>
+                    </div>
+                @endif
+
 
             </div>
             <!--header-->
@@ -32,23 +46,23 @@
 
                 <div class="grid gap-4 lg:w-2/3 lg:m-16 lg:mt-6">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($pr->picture1) }}"alt="">
                     </div>
                     <div class="grid grid-cols-5 gap-4">
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($pr->picture2) }}" alt="">
                         </div>
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($pr->picture3) }}"alt="">
                         </div>
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($pr->picture4) }}" alt="">
                         </div>
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($pr->picture5) }}" alt="">
                         </div>
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="{{ Storage::url($pr->picture6) }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -64,7 +78,7 @@
                                 </label>
                                 <input
                                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                    id="grid-last-name" type="text" placeholder="Doe">
+                                    id="grid-last-name" type="text" placeholder="">
                             </div>
                             <div class="w-full md:w-1/2 px-3">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -73,7 +87,7 @@
                                 </label>
                                 <input
                                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                    id="grid-last-name" type="text" placeholder="Doe">
+                                    id="grid-last-name" type="text" placeholder="">
                             </div>
                         </div>
                         <div class="flex flex-wrap -mx-3 mb-6">
@@ -84,7 +98,7 @@
                                 </label>
                                 <input
                                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                    id="grid-email" type="email" placeholder="********@*****.**">
+                                    id="grid-email" type="email" placeholder="">
                             </div>
                         </div>
 
@@ -116,7 +130,7 @@
                 <div class="">
                     <div class="grid grid-cols-1 divide-y">
                         <div class="mb-8"><p class="text-4xl">Description</p></div>
-                        <div ><p class="mt-8 text-sm ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p></div>
+                        <div ><p class="mt-8 text-sm ">{{$pr->description}}</p></div>
 
                     </div>
                 </div>
@@ -130,44 +144,44 @@
                                     <div class="px-4 py-5 sm:p-6">
                                         <div class="flex flex-col items-start justify-between mb-6">
                                             <span class="text-sm font-medium text-gray-600">Nom proprietaire</span>
-                                            <span class="text-lg font-medium text-gray-800">John Doe</span>
+                                            <span class="text-lg font-medium text-gray-800">Homiz</span>
                                         </div>
                                         <div class="flex flex-col items-start justify-between mb-6">
                                             <span class="text-sm font-medium text-gray-600">Adresse</span>
-                                            <span class="text-lg font-medium text-gray-800">thies</span>
+                                            <span class="text-lg font-medium text-gray-800">{{$pr->adresse}}</span>
                                         </div>
                                         <div class="flex flex-row items-center justify-between mb-6">
                                             <div class="flex flex-col items-start">
                                                 <span class="text-sm font-medium text-gray-600">Category</span>
-                                                <span class="text-lg font-medium text-gray-800">villa</span>
+                                                <span class="text-lg font-medium text-gray-800">{{$pr->category->name}}</span>
                                             </div>
                                     </div>
                                         <div class="flex flex-col items-start">
                                             <span class="text-sm font-medium text-gray-600">Surface </span>
-                                            <span class="text-lg font-medium text-gray-800">12 m2</span>
+                                            <span class="text-lg font-medium text-gray-800">{{$pr->surface}} m2</span>
                                         </div>
                                  </div>
 
                                      <div class="px-4 py-5 sm:p-6">
                                          <div class="flex flex-col items-start justify-between mb-6">
                                              <span class="text-sm font-medium text-gray-600">Année de construction</span>
-                                             <span class="text-lg font-medium text-gray-800">2001</span>
+                                             <span class="text-lg font-medium text-gray-800">{{$pr->yearOfBuild}}</span>
                                          </div>
                                          <div class="flex flex-col items-start justify-between mb-6">
                                              <span class="text-sm font-medium text-gray-600">Chambre</span>
-                                             <span class="text-lg font-medium text-gray-800">4</span>
+                                             <span class="text-lg font-medium text-gray-800">{{$pr->room}}</span>
                                          </div>
                                          <div class="flex flex-row items-center justify-between mb-6">
                                              <div class="flex flex-col items-start">
                                                  <span class="text-sm font-medium text-gray-600">Salle de bain </span>
-                                                 <span class="text-lg font-medium text-gray-800">3</span>
+                                                 <span class="text-lg font-medium text-gray-800">{{$pr->bathroom}}</span>
                                              </div>
 
 
                                          </div>
                                          <div class="flex flex-col items-start">
                                              <span class="text-sm font-medium text-gray-600">Garage </span>
-                                             <span class="text-lg font-medium text-gray-800">1</span>
+                                             <span class="text-lg font-medium text-gray-800">{{$pr->garage}}</span>
                                          </div>
                                      </div>
                                 </div>

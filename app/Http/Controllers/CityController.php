@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\City;
+use App\Models\Property;
 use Illuminate\Http\Request;
 
 class CityController extends Controller
@@ -34,9 +36,13 @@ class CityController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(City $city)
+    public function show( $id)
     {
-        //
+        $pr=City::findOrFail($id);
+        $properties = Property::where('city_id', $id)->get();
+        $cat=Category::all();
+        $vi=City::all();
+        return view('cities/show',compact('pr','properties','vi','cat'));
     }
 
     /**

@@ -1,5 +1,5 @@
 @extends('base')
-@section('title','Liste')
+@section('title','Tous')
 @section('hero')
     .
 @endsection
@@ -9,14 +9,14 @@
         <div class=""><p class="text-5xl font-sans">Listes de nos biens</p></div>
         <div class="lg:flex lg:flex-row justify-between mt-8 lg:m-16   ">
             <div class="flex flex-col md:flex-row lg:grid  lg:grid-cols-2  gap-3 justify-center mt-10 lg:w-2/3 ">
-                @foreach($pr as $p)
+                @foreach($properties as $p)
                     <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mb-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4">
                         <div class="relative">
                             <div class="">
                                 <a href="{{route('properties.show',$p->id)}}">     <img src="{{ Storage::url($p->picture1) }}"src="{{ Storage::url($p->picture1) }}" class="w-full" alt="...">
                                 </a>
                             </div>
-                            @if($p->status==1)
+                            @if($pr->status==1)
                                 <div class="absolute bottom-8 left-5 text-2xl font-bold text-white">
                                     <p>{{$p->price}}FCFA/Mois</p>
                                 </div>
@@ -37,7 +37,9 @@
                                 <p> <i class="fa fa-car" aria-hidden="true"></i>{{$p->garage}}</p>
                                 <p> <i class="fa fa-industry" aria-hidden="true"></i>{{$p->surface}}25m2</p>
                             </div>
-                            <h5 class="mb-0 text-base font-medium">Studio</h5>
+                            <h5 class="mb-0 text-base font-medium text-white ">rcebbj </h5>
+                            <h5 class="mb-0 text-base font-medium text-white ">rcebbj </h5>
+
                             <div class="divide-y divide-gray-400  mt-3">
                                 <p></p>
                                 <p class="mb-0 flex flex-row justify-between"><small class="text-gray-700"><i class="fa-regular fa-user"></i>Homiz</small> <small class="text-gray-700"><i class="fa-regular fa-calendar-days"></i> depuis {{$p->yearOfBuild}}</small></p>
